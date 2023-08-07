@@ -1,13 +1,17 @@
 import React from 'react';
-import { HeaderContainer, Logo, Navbar, SearchBar } from './Header.styled';
+import { HeaderContainer, Logo, Navbar, NavLink, SearchBar } from './Header.styled';
 
 const Header = () => {
     return (
       <HeaderContainer>
-        <Navbar>
-          <Logo>My Logo</Logo>
+        <Logo>My Logo</Logo>
+
+          <Navbar>
+            <NavLink href="#home">Home</NavLink>
+            <NavLink href="#about">About</NavLink>
+            <NavLink href="#contact">Contact</NavLink>
+          </Navbar>
           <SearchBar type="text" placeholder="Search..." />
-        </Navbar>
       </HeaderContainer>
     );
 };

@@ -2,8 +2,11 @@ import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'modern-normalize'
 
 const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
   body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;

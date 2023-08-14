@@ -1,12 +1,14 @@
 import GlobalStyle from "./GlobalStyles";
 import Header from "./Header/Header";
+import Hero from "./Hero/Hero";
 
 
 function App() {
   return (
     <>
-      <Header />
       <GlobalStyle />
+      <Header />
+      <Hero></Hero>
     </>
   );
 }

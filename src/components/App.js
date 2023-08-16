@@ -1,6 +1,7 @@
 import GlobalStyle from "./GlobalStyles";
 import Header from "./Header/Header";
 import Hero from "./Hero/Hero";
+import TaskList from "./TaskList/TaskList";
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <GlobalStyle />
       <Header />
       <Hero />
+      <TaskList />
     </>
   );
 }

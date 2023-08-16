@@ -8,7 +8,7 @@ function App() {
     <>
       <GlobalStyle />
       <Header />
-      <Hero></Hero>
+      <Hero />
     </>
   );
 }

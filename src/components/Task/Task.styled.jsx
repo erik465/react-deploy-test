@@ -16,11 +16,16 @@ export const StyledTask = styled.div`
         border: 2px solid #eee;
         scale : 1.1;
     }
+
+    p{
+        font-size: 20px;
+    }
 `
 
 export const StyledContent = styled.p`
     max-width: 300px;
     color: #8e8e8e;
+    font-size: 16px !important;
 `
 
 export const CompleteStatus = styled.div`
@@ -30,5 +35,7 @@ export const CompleteStatus = styled.div`
 
     p{
         color: ${props => props.completed ? 'green' : '#b03535'};
+        font-size: 16px;
+
     }
 `

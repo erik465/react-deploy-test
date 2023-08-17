@@ -4,13 +4,19 @@ import Hero from "./Hero/Hero";
 import TaskList from "./TaskList/TaskList";
 
 
+
+
+
+
 function App() {
+
   return (
     <>
-      <GlobalStyle />
-      <Header />
-      <Hero />
-      <TaskList />
+        <GlobalStyle />
+        <Header />
+        <Hero />
+        <TaskList />
+
     </>
   );
 }

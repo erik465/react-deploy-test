@@ -9,7 +9,9 @@ const Hero = () =>{
     
     return (
     <StyledHero>
-       <TypedText string={welcomeText} maxWidth={750} minHeight={194}/>
+        <div>
+            <TypedText string={welcomeText} maxWidth={750} minHeight={194}/>
+        </div>
     </StyledHero>
     )
 }

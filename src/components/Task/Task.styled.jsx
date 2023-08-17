@@ -6,6 +6,7 @@ export const StyledTask = styled.div`
     gap: 10px;
     border: 2px solid #908a8a; /* Set a transparent base border */
     border-radius: 10px;
+    
     padding: 20px;
     position: relative;
     transition: 1s;

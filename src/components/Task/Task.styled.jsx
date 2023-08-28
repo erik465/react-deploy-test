@@ -13,7 +13,7 @@ export const StyledTask = styled.div`
     cursor: pointer;
 
     &:hover{
-        border: 2px solid #eee;
+        border: ${props => props.theme.taskHoverBorder};
         scale : 1.1;
     }
 

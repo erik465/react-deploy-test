@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 
 export const HeaderContainer = styled.header`
-    background-color: #333;
-    color: #fff;
+    background-color: ${props => props.theme.headerBgColor};
+    color: ${props => props.theme.headerTextColor};
     padding: 1rem;
     display: flex;
     justify-content: space-between;
@@ -23,13 +23,13 @@ export const Logo = styled.div`
 `;
 
 export const NavLink = styled.a`
-  color: #fff;
+  color: ${props => props.theme.headerTextColor};
   text-decoration: none;
   margin-left: 1rem;
   transition: 1s;
 
   &:hover {
-    color: #ff9800; /* Yellow-orangeish color */
+    color: ${props => props.theme.headerHighlightColor}; 
   }
 `;
 
@@ -40,39 +40,4 @@ export const Navbar = styled.nav`
   width: 560px;
 `;
 
-export const SearchBarWrapper = styled.div`
-  position: relative;
-  display: flex;
-`;
-
-export const SearchBar = styled.input`
-  padding: 3px 5px;
-  border: none;
-  border-radius: 5px 0 0 5px;
-  width: 150px;
-  border: none;
-  outline: none; 
-`;
-
-export const SearchButton = styled.button`
-  height: 36px; 
-  border: none;
-  border-radius: 0 5px 5px 0;
-  background-color: #ff9800; /* Yellow-orangeish color */
-  color: #fff;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 3px;
-
-  svg{
-    fill: currentColor;
-    transition: 1s;
-  }
-
-  :hover {
-    color: #212020;
-  }
-`;
 

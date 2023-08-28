@@ -67,8 +67,8 @@ const animBefore = keyframes`
 
 
 export const StyledHero = styled.div`
-    background: #232222;
-    color: #eee;
+    background: ${props => props.theme.heroBgColor};
+    color: ${props => props.theme.heroTextColor};
     margin: 0;
     display: flex;
     justify-content: center;
@@ -102,7 +102,7 @@ export const StyledHero = styled.div`
         position: absolute;
         width: 100px;
         height: 100px;
-        border: 1px solid #eee;
+        border: 1px solid ${props => props.theme.heroTextColor};
         border-width:  0 1px 1px 0;
         left: 600px;
         top: 215px;
@@ -115,7 +115,7 @@ export const StyledHero = styled.div`
         position: absolute;
         width: 100px;
         height: 100px;
-        border: 1px solid #eee;
+        border: 1px solid ${props => props.theme.heroTextColor};
         border-width:  1px 0 0 1px;
         top: 0;
         left: 0;

@@ -1,10 +1,9 @@
 import React from 'react';
-import { HeaderContainer, Logo, Navbar, NavLink, SearchBarWrapper, SearchBar, SearchButton } from './Header.styled';
-import { FaSearch } from 'react-icons/fa';
+import { HeaderContainer, Logo, Navbar, NavLink} from './Header.styled';
 
 
 
-const Header = () => {
+const Header = ({setDarkMode, isDarkMode}) => {
     return (
       <HeaderContainer>
         <Logo>Task Manager</Logo>
@@ -15,12 +14,8 @@ const Header = () => {
             <NavLink href="#about">Calendar</NavLink>
             <NavLink href="#contact">Projects</NavLink>
           </Navbar>
-          <SearchBarWrapper>
-            <SearchBar type="text" placeholder="Search..." />
-            <SearchButton>
-              <FaSearch />
-            </SearchButton>
-          </SearchBarWrapper>
+          <button onClick={setDarkMode}>Set {isDarkMode ? 'light' : 'dark'} mode</button>
+          
       </HeaderContainer>
     );
 };
